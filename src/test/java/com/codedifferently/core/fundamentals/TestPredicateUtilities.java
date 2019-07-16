@@ -11,7 +11,9 @@ public class TestPredicateUtilities {
     @Test
     public void testReturnTrue(){
         // : Given
+        int x = 6;
         // : When
+        int y = 3;
         // : Then
         assertTrue(predicateUtilities.returnTrue());
     }
@@ -19,6 +21,8 @@ public class TestPredicateUtilities {
     @Test
     public void testReturnFalse(){
         // : Given
+        int x = 3;
+        int y = 6;
         // : When
         // : Then
         assertFalse(predicateUtilities.returnFalse());
@@ -97,7 +101,7 @@ public class TestPredicateUtilities {
     @Test
     public void testLessOrEqualFalse() {
         // : Given
-        int greaterValue = 3;
+        int greaterValue = 13;
         int lesserValue = 6;
 
         // : When
